@@ -1,0 +1,10 @@
+.element {
+    width: 100%;
+    height: 100vh;
+    resize: both;
+    overflow: auto;
+    background-image: url("../image/pageBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
