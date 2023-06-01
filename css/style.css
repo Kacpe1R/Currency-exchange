@@ -75,3 +75,16 @@ html {
 .form__calculation {
     color: hsl(156, 100%, 50%);
 }
+
+.footer {
+    border: 1px solid #ccc;
+    background-color: hsla(0, 0%, 0%, 0.35);
+    text-align: center;
+    color: #ffffff;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 1px;
+}
