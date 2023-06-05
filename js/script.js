@@ -1,5 +1,4 @@
 {
-    console.log("Hello");
     const calculateResult = (amount, exchange) => {
         const rateUSD = 4.22;
         const rateEUR = 4.53;

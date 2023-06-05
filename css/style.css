@@ -38,12 +38,12 @@ html {
 
 .form__fieldset {
     border: 1px solid #ccc;
-    background-color: hsla(0, 0%, 0%, 0.5);
+    background-color: hsla(0, 0%, 0%, 0.75);
     text-align: center;
     padding-top: 20px;
     padding-bottom: 30px;
     border-radius: 20px;
-    margin: 20px 20px;
+    margin: 80px 20px;
 }
 
 .form__legend {
@@ -73,12 +73,12 @@ html {
 }
 
 .form__calculation {
-    color: hsl(156, 100%, 50%);
+    color: rgb(189, 189, 189);
 }
 
 .footer {
     border: 1px solid #ccc;
-    background-color: hsla(0, 0%, 0%, 0.35);
+    background-color: hsla(0, 0%, 0%, 0.55);
     text-align: center;
     color: #ffffff;
     max-width: 100%;
