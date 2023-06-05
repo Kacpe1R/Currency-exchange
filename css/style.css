@@ -38,7 +38,7 @@ html {
 
 .form__fieldset {
     border: 1px solid #ccc;
-    background-color: hsla(0, 0%, 0%, 0.75);
+    background-color: hsla(0, 0%, 0%, 0.85);
     text-align: center;
     padding-top: 20px;
     padding-bottom: 30px;
