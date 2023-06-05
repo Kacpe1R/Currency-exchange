@@ -1,37 +1,47 @@
-let exchangeRateElement = document.querySelector(".js-exchangeRateChoise");
-let amountElement = document.querySelector(".js-amount");
-let resultElement = document.querySelector(".js-result");
-let formElement = document.querySelector(".js-form");
+{
+    console.log("Hello");
+    const calculateResult = (amount, exchange) => {
+        const rateUSD = 4.22;
+        const rateEUR = 4.53;
+        const rateCHF = 4.67;
+        const rateGBP = 5.21;
+        const rateCNY = 0.60;
 
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
+        switch (exchange) {
+            case "USD":
+                return amount / rateUSD;
+            case "EUR":
+                return amount / rateEUR;
+            case "CHF":
+                return amount / rateCHF;
+            case "GBP":
+                return amount / rateGBP;
+            case "CNY":
+                return amount / rateCNY;
+        }
+    };
+    const updateResultText = (amount, result, exchange) => {
+        const resultElement = document.querySelector(".js-result");
+        resultElement.innerText = `${amount.toFixed(2)} PLN = ${result.toFixed(2)} ${exchange}`;
+    };
+    const onFormSubmit = (event) => {
+        event.preventDefault();
 
-    let amount = +amountElement.value;
-    let exchangeRate = exchangeRateElement.value;
-    let result;
-    let USD = 4.22;
-    let EUR = 4.53;
-    let CHF = 4.67;
-    let GBP = 5.21;
-    let CNY = 0.60;
+        const amountElement = document.querySelector(".js-amount");
+        const exchangeElement = document.querySelector(".js-exchangeRateChoise");
+        
+        const amount = +amountElement.value;
+        const exchange = exchangeElement.value;
+        
+        let result = calculateResult(amount, exchange);
 
-    switch (exchangeRate) {
-        case "USD":
-            result = amount / USD;
-            break;
-        case "EUR":
-            result = amount / EUR;
-            break;
-        case "CHF":
-            result = amount / CHF;
-            break;
-        case "GBP":
-            result = amount / GBP;
-            break;
-        case "CNY":
-            result = amount / CNY;
-            break;
+        updateResultText(amount, result, exchange);
     }
 
-    resultElement.innerText = `${result.toFixed(2)} ${exchangeRate}`;
-});
+    const init = () => {
+        const formElement = document.querySelector(".js-form");
+        formElement.addEventListener("submit", onFormSubmit);
+    };
+
+    init();
+}
