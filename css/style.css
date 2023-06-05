@@ -73,7 +73,8 @@ html {
 }
 
 .form__calculation {
-    color: rgb(232, 232, 232);
+    font-size: 17px;
+    color: rgb(0, 255, 255);
 }
 
 .footer {
