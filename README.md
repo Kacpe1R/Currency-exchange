@@ -18,7 +18,10 @@ Below is a short video presenting my website "Currency Converter" in a simple ve
 - Markdown
 - GIT
 
-## Updates
+## Version 2.0
 
-Version 2.0
+Updates 05.06.2023
+
+- Text color and size changed
+- Improved page readability
 
