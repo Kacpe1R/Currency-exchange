@@ -3,7 +3,7 @@
     height: 100vh;
     resize: both;
     overflow: auto;
-    background-image: url("../image/pageBackground.jpg");
+    background-image: url("../images/pageBackground.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
